@@ -44,12 +44,13 @@ gulp.task 'sass', ['jade'], ->
 
 gulp.task 'coffee', ->
   gulp.src [
+    './src/js/download-latest.js',
     './src/bower_components/smooth-scroll/dist/js/smooth-scroll.js',
     './src/coffee/*.coffee'
   ]
     .pipe $.if /[.]coffee$/, $.coffee({ bare: true }).on('error', $.util.log)
     .pipe $.concat 'main.js'
-    .pipe $.if live, $.uglify()
+    #.pipe $.if live, $.uglify() since we use ES6 we cant uglify 
     .pipe gulp.dest './temp'
 
 gulp.task 'inject', ['sass', 'coffee'], ->
