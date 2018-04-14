@@ -1,5 +1,9 @@
 # Messenger for Desktop Website
 
+**This project is now unmaintained, we suggest looking at [Caprine](https://github.com/sindresorhus/caprine)**
+
+**[Our domain](https://www.messengerfordesktop.org) will redirect to the Caprine!**
+
 New website for the [Messenger for Desktop](https://github.com/Aluxian/Messenger-for-Desktop) project.
 
 Made w/ Gulp, Jade, SASS & CoffeeScript.
